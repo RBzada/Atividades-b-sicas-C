@@ -10,29 +10,29 @@ float volume_piramide(float h, float L);
 int main(){   
     
     int n, m;
-    printf("Digite 1 para calcular área ou 2 para calcular o volume: ");
+    printf("Digite 1 para calcular rea ou 2 para calcular o volume: ");
     scanf("%d", &n);
     if (n == 1){
-        printf("\nDigite 1 para área do quadrado ou 2 para área do círculo: ");
+        printf("\nDigite 1 para área do quadrado ou 2 para area do circulo: ");
         scanf("%d", &m);
         while (m < 0 | m > 2){
-            printf("\nEsse valor não está disponível! Tente novamente.");
-            printf("\nDigite 1 para área do quadrado e 2 para área do círculo: ");
+            printf("\nEsse valor nao esta disponivel! Tente novamente.");
+            printf("\nDigite 1 para area do quadrado e 2 para área do circulo: ");
             scanf("%d", &m);
         }
     }
     if (n == 2){
-        printf("\nDigite 1 para o volume do cilindro ou 2 para volume da pirâmide: ");
+        printf("\nDigite 1 para o volume do cilindro ou 2 para volume da piramide: ");
         scanf("%d", &m);
         while (m < 0 | m > 2){
-            printf("\nEsse valor não está disponível! Tente novamente.");
-            printf("\nDigite 1 para o volume do cilindro ou 2 para volume da pirâmide: ");
+            printf("\nEsse valor nao esta disponivel! Tente novamente.");
+            printf("\nDigite 1 para o volume do cilindro ou 2 para volume da piramide: ");
             scanf("%d", &m);
         }
     }
     
     if (n > 2 | n < 0){
-        printf("O valor digitado não está disponível!!");
+        printf("O valor digitado nao esta disponivel!!");
         return 0;
     }
     menu1(n, m);
@@ -45,15 +45,15 @@ int menu1(int n, int m){
     if (n == 1){
         if (m == 1){
             float L;
-            printf("\ndigite o lado do quadrado: ");
+            printf("\nDigite o lado do quadrado: ");
             scanf("%f", &L);
-            printf("\nO valor da área do quadrado eh: %.2f", area_quadrado(L));
+            printf("\nO valor da area do quadrado eh: %.2f", area_quadrado(L));
         }
         else{
             float r;
-            printf("\nDigite o raio do círculo: ");
+            printf("\nDigite o raio do circulo: ");
             scanf("%f", &r);
-            printf("\nO valor da área do círculo eh: %.2f", area_cicle(r));
+            printf("\nO valor da area do circulo eh: %.2f", area_cicle(r));
         }
         
     }
@@ -69,11 +69,11 @@ int menu1(int n, int m){
         }
         else{
             float h, L;
-            printf("\nDigite a altura da pirâmide: ");
+            printf("\nDigite a altura da piramide: ");
             scanf("%f", &h);
             printf("Digite o lado do quadrado da base: ");
             scanf("%f", &L);
-            printf("\nO volume da pirâmide eh: %.2f", volume_piramide(h, L));
+            printf("\nO volume da piramide eh: %.2f", volume_piramide(h, L));
         }
     }
 }
