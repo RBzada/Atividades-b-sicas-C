@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define pi  3.14
 
-int menu1(int n, int m);
+int menu(int n, int m);
 float area_quadrado(float L);
 float area_cicle(float r);
 float volume_cili(float h,float r);
@@ -10,37 +10,42 @@ float volume_piramide(float h, float L);
 int main(){   
     
     int n, m;
-    printf("Digite 1 para calcular rea ou 2 para calcular o volume: ");
+    printf("Digite 1 para calcular area ou 2 para calcular o volume: ");
     scanf("%d", &n);
+
+    while (n < 1 | n > 2){
+        printf("O valor digitado nao esta disponivel. Tente novamente!\n");
+        printf("\nDigite 1 para calcular area ou 2 para calcular o volume: ");
+        scanf("%d", &n);
+    }
+
     if (n == 1){
-        printf("\nDigite 1 para área do quadrado ou 2 para area do circulo: ");
+        printf("\nDigite 1 para area do quadrado ou 2 para area do circulo: ");
         scanf("%d", &m);
-        while (m < 0 | m > 2){
+
+        while (m < 1 | m > 2){
             printf("\nEsse valor nao esta disponivel! Tente novamente.");
             printf("\nDigite 1 para area do quadrado e 2 para área do circulo: ");
             scanf("%d", &m);
         }
     }
+
     if (n == 2){
         printf("\nDigite 1 para o volume do cilindro ou 2 para volume da piramide: ");
         scanf("%d", &m);
-        while (m < 0 | m > 2){
+
+        while (m < 1 | m > 2){
             printf("\nEsse valor nao esta disponivel! Tente novamente.");
-            printf("\nDigite 1 para o volume do cilindro ou 2 para volume da piramide: ");
+            printf("\nDigite 1 para o volume do cilindro ou 2 para volume da piramide quadrangular: ");
             scanf("%d", &m);
         }
     }
-    
-    if (n > 2 | n < 0){
-        printf("O valor digitado nao esta disponivel!!");
-        return 0;
-    }
-    menu1(n, m);
 
+    menu(n, m);
     return 0;
 }
 
-int menu1(int n, int m){
+int menu(int n, int m){
     
     if (n == 1){
         if (m == 1){
