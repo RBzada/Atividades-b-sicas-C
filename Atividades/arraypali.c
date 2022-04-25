@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define N = 0
 
 int pali(int n, int arr[], int indice);
 
@@ -18,22 +17,34 @@ int main(){
             arr[c] = num;
         }
     }
-    pali(n - 1, arr, 0);
+    if (pali(n - 1, arr, 0) == 0){
+        printf("False");
+    }
+    else{
+        printf("True");
+    }
     return 0;
  }
 
 int pali(int n, int arr[], int indice){
-    int cont;
-    if (arr[indice] == arr[n]){
+    if (n == 1){
+        if (arr[0] == arr[1]){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
+    else{
+        if (arr[indice] == arr[n]){
         indice++;
         n--;
-        printf("TRUE");
         if (n >= indice){
             pali(n, arr, indice);
         }
     }
     else{
-        printf("FALSE");
         return 0;
+    }
     }
 }
