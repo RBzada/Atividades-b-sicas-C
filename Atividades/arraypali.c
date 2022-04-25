@@ -37,14 +37,14 @@ int pali(int n, int arr[], int indice){
     }
     else{
         if (arr[indice] == arr[n]){
-        indice++;
-        n--;
-        if (n >= indice){
-            pali(n, arr, indice);
+            indice++;
+            n--;
+            if (n >= indice){
+                pali(n, arr, indice);
+            }
         }
-    }
-    else{
-        return 0;
-    }
+        else{
+            return 0;
+        }
     }
 }
