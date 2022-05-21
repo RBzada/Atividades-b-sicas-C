@@ -33,6 +33,9 @@ int main(){
     // Exibindo o valor mínimo: 
     printf("\n- A menor nota eh: %d", vmin(arr, N));
 
+    // Exibindo desvio padrão:
+    printf("\n- O desvio padrao das notas eh: %.2f", std(arr, N));
+
     return 0;
 }
 

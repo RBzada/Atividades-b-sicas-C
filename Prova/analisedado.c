@@ -1,5 +1,5 @@
 #include "analisedado.h"
-
+#include <math.h>
 
 float media(int arr[], int n){
     int soma;
@@ -38,4 +38,25 @@ int vmin(int arr[], int n){
         }
     }
     return min; 
+}
+
+float std(int arr[], int n){
+    // Soma vai receber a soma das notas
+    // Somatoriodist vai receber a soma de todas as distâncias ao quadrado 
+
+    int soma = 0;
+    float mean, somatoriodist;
+
+    for (int i = 0; i < n; i++) {
+        soma += arr[i];
+    }
+    mean = (float)soma / n;
+
+    for (int r = 0; r < n; r++) {
+        somatoriodist += pow(arr[r] - mean, 2);
+    }
+
+    return sqrt(somatoriodist / n);
+    
+
 }
