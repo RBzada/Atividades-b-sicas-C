@@ -4,7 +4,7 @@
 #define N 13
 
 int main(){
-    int arr[13] = {5, 3, 3, 8, 7, 10, 10, -5, 2, 7, 12, 9, 14};
+    int arr[13] = {5, 3, -3, 8, 7, 10, 10, 5, -8, 7, 12, 9, 14};
 
     // Printando as notas originais:
     printf("- As notas sao: ");
@@ -26,6 +26,12 @@ int main(){
     
     // Tirando a mediana das notas: 
     printf("\n- A mediana das notas informadas eh: %.2f", mediana(arr, N));
+
+    // Exibindo o valor máximo:
+    printf("\n- A maior nota eh: %d", vmax(arr, N));
+
+    // Exibindo o valor mínimo: 
+    printf("\n- A menor nota eh: %d", vmin(arr, N));
 
     return 0;
 }
