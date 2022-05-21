@@ -14,6 +14,7 @@ float mediana(int arr[], int n){
     if (n % 2 == 1){
         return arr[n/2];
     }
+
     if (n % 2 == 0){
         return (float)(arr[n/2] + arr[n/2 - 1]) / 2;
     }
