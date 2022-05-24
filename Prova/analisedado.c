@@ -16,6 +16,22 @@ float media(int arr[], int n){
 
 
 float mediana(int arr[], int n){
+    int min, swap;    
+
+    // Ordenando o array em ordem crescente:
+    for (int i = 0; i < (n - 1); i++){
+        min = i;
+        for(int j = (i + 1); j < n; j++){
+            if (arr[j] > arr[min]){
+                min = j;
+            }
+        }
+        if (i != min){
+            swap = arr[i];
+            arr[i] = arr[min];
+            arr[min] = swap;
+        }
+    }
     if (n % 2 == 1){
         return arr[n/2];
     }
