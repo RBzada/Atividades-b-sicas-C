@@ -63,7 +63,6 @@ float std(int arr[], int n){
 
 void moda(int arr[], int n){
     int *cont = malloc(n * sizeof(int));
-    int v = 0;
     int frequenciamaior = 0;
 
     // O array cont recebe a frenquência de todos o números
