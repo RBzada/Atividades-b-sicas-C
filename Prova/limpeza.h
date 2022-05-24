@@ -1,5 +1,3 @@
-// Nome: Rafael Barboza de Almeida
-// Matrícula: 20210026760
 
 #ifndef LIMPEZA_H
 #define LIMPEZA_H
