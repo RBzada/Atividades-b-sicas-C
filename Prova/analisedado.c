@@ -7,11 +7,11 @@
 #include <stdlib.h>
 
 float media(int arr[], int n){
-    int soma;
+    float soma =0;
     for (int i = 0; i < n; i++){
         soma += arr[i];
     }
-    return (float)soma / n;
+    return soma / n;
 }
 
 
