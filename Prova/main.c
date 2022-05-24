@@ -1,3 +1,5 @@
+// Nome: Rafael Barboza de Almeida
+// Matrícula: 20210026760
 #include <stdio.h>
 #include "limpeza.h"
 #include "analisedado.h"
