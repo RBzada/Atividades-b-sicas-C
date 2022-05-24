@@ -5,7 +5,7 @@
 
 float media(int arr[], int n);
 float mediana(int arr[], int n);
-int moda(int arr[], int n);
+void moda(int arr[], int n);
 float std(int arr[], int n);
 int vmax(int arr[], int n);
 int vmin(int arr[], int n);
