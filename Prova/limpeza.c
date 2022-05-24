@@ -1,3 +1,6 @@
+// Nome: Rafael Barboza de Almeida
+// Matrícula: 20210026760
+
 #include "limpeza.h"
 
 int clean(int arr[], int n){
