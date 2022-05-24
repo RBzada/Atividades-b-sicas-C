@@ -1,3 +1,6 @@
+// Nome: Rafael Barboza de Almeida
+// Matrícula: 20210026760
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "histograma.h"
@@ -29,7 +32,8 @@ void histograma(int arr[], int n){
             }
         }
     }
-    
+
+    // Colocando 0 nos índices dos números ele se repete em arr[]
     for (int i = 0; i < n; i++){
         for (int j = i + 1; j < n; j++){
             if (arr[i] == arr[j]){
@@ -40,9 +44,11 @@ void histograma(int arr[], int n){
 
     max = vmax(cont, n);
     printf("\n\n");
+
     for (int i = 0; i < 10 + (max/2); i++){
         printf(" ");
     }
+
     printf("HISTOGRAMA DAS NOTAS");
     printf("\n");
 
@@ -63,12 +69,15 @@ void histograma(int arr[], int n){
             printf("\n");
         }
     }
+
     printf("▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬ ▬");
+
     for(int i = 0; i < max; i++){
         printf(" ▬");
     }
     
     printf("\n  ");
+
     for(int i = 1; i <= max; i++){
         if(i <= 10){
         printf("  %d ", i);
@@ -79,9 +88,11 @@ void histograma(int arr[], int n){
     }
 
     printf("\n");
+
     for (int i = 0; i < 10 + (max/2); i++){
         printf(" ");
     }
+
     printf("Frequência");
 
 }
