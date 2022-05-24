@@ -1,5 +1,4 @@
-// Nome: Rafael Barboza de Almeida
-// Matrícula: 20210026760
+
 
 #include <stdio.h>
 #include <stdlib.h>

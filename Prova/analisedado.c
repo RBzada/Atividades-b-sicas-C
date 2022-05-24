@@ -1,5 +1,4 @@
-// Nome: Rafael Barboza de Almeida
-// Matrícula: 20210026760
+
 
 #include "analisedado.h"
 #include <math.h>
@@ -26,7 +25,7 @@ float mediana(int arr[], int n){
                 min = j;
             }
         }
-        
+
         if (i != min){
             muda = arr[i];
             arr[i] = arr[min];

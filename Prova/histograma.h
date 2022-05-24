@@ -1,5 +1,3 @@
-// Nome: Rafael Barboza de Almeida
-// Matrícula: 20210026760
 
 #ifndef HISTOGRAMA_H
 #define HISTOGRAMA_H
