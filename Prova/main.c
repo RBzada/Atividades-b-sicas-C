@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "limpeza.h"
 #include "analisedado.h"
+#include "histograma.h"
 #define N 13
 
 int main(){
@@ -39,6 +40,9 @@ int main(){
     // Exibindo a moda das notas:
     printf("\n");
     moda(arr, N);
+
+    // Exibindo o histograma:
+    histograma(arr, N);
 
     return 0;
 }
