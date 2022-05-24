@@ -4,7 +4,7 @@
 #define N 13
 
 int main(){
-    int arr[13] = {5, 3, -3, 8, 7, 10, 10, 5, -8, 7, 12, 9, 14};
+    int arr[13] = {5, 3, -3, 8, 7, 10, 10, 5, -8, 7, 9, 9, 8};
 
     // Printando as notas originais:
     printf("- As notas sao: ");
@@ -35,6 +35,10 @@ int main(){
 
     // Exibindo desvio padrão:
     printf("\n- O desvio padrao das notas eh: %.2f", std(arr, N));
+
+    // Exibindo a moda das notas:
+    printf("\n");
+    moda(arr, N);
 
     return 0;
 }
