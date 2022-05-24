@@ -9,7 +9,7 @@ int main(){
     // Printando as notas originais:
     printf("- As notas sao: ");
     for (int i = 0; i < 13; i++){
-        printf(" %d", arr[i]);
+        printf("%d ", arr[i]);
     }
 
     // Com a chamada da função as alterações feitas dentro dela vão para fora também:
@@ -18,7 +18,7 @@ int main(){
     // Printando as novas notas:
     printf("\n- Com a limpeza, as nota ficaram: ");
     for (int i = 0; i < 13; i++){
-        printf(" %d", arr[i]);
+        printf("%d ", arr[i]);
     }
 
     // Tirando a média das notas: 
