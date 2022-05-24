@@ -7,7 +7,7 @@
 #include <stdlib.h>
 
 float media(int arr[], int n){
-    float soma =0;
+    float soma = 0;
     for (int i = 0; i < n; i++){
         soma += arr[i];
     }
@@ -66,20 +66,20 @@ int vmin(int arr[], int n){
 float std(int arr[], int n){
     // Soma vai receber a soma das notas
     // Somatoriodist vai receber a soma de todas as distâncias ao quadrado 
-
-    int soma = 0;
+    float soma = 0;
     float mean, somatoriodist;
 
     for (int i = 0; i < n; i++){
         soma += arr[i];
     }
-    mean = (float)soma / n;
+
+    mean = soma / n;
 
     for (int r = 0; r < n; r++){
         somatoriodist += pow(arr[r] - mean, 2);
     }
 
-    return sqrt(somatoriodist / n);
+    return sqrt(somatoriodist / (n - 1));
 }
 
 void moda(int arr[], int n){
