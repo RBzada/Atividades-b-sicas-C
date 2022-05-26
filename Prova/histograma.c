@@ -49,16 +49,17 @@ void histograma(int arr[], int n){
         printf(" ");
     }
 
-    printf("HISTOGRAMA DAS NOTAS");
+    printf("HISTOGRAMA DAS NOTAS\n");
+    printf("Notas");
     printf("\n");
 
     for (int i = 0; i < n; i++){
         if (arr[i] > 0 || cont[i] != 0){
             if(arr[i] < 10){
-                printf(" %d |", arr[i]);      
+                printf("   %d |", arr[i]);      
             }   
             else{
-                printf("%d |", arr[i]);      
+                printf("  %d |", arr[i]);      
 
             }
         }
@@ -76,7 +77,7 @@ void histograma(int arr[], int n){
         printf(" ▬");
     }
     
-    printf("\n  ");
+    printf("\n    ");
 
     for(int i = 1; i <= max; i++){
         if(i <= 10){
