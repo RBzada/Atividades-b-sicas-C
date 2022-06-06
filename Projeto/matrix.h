@@ -12,4 +12,6 @@ typedef struct {
 
 Matrix create_matrix(int *data, int n_rows, int n_cols);
 
+void print_matrix(Matrix matrix);
+
 #endif
