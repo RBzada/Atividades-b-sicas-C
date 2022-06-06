@@ -18,4 +18,6 @@ Matrix zeros_matrix(int n_rows, int n_cols);
 
 Matrix full_matrix(int n_rows, int n_cols, int value);
 
+Matrix i_matrix(int n);
+
 #endif

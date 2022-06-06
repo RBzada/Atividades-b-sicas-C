@@ -46,3 +46,18 @@ Matrix full_matrix(int n_rows, int n_cols, int value){
 
     return create_matrix(arr, n_rows, n_cols);
 }
+
+Matrix i_matrix(int n){
+    int *arr = malloc((n * n) * sizeof(int));
+
+    for (int i = 0; i < (n * n); i++){
+        if (i % (n + 1) == 0){
+            arr[i] = 1;
+        }
+        else{
+            arr[i] = 0;
+        }
+    }
+
+    return create_matrix(arr, n, n);
+}
