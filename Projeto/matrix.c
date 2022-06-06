@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "matrix.h"
+#include <stdlib.h>
 
 Matrix create_matrix(int *data, int n_rows, int n_cols){
     Matrix matriz;
@@ -24,4 +25,12 @@ void print_matrix(Matrix matrix){
         }
         printf("\n");
     }
+}
+
+Matrix zeros_matrix(int n_rows, int n_cols){
+    int *arr = malloc((n_cols * n_rows) * sizeof(int));
+    for (int i = 0; i < (n_cols * n_rows); i++){
+        arr[i] = 0;
+    }
+    return create_matrix(arr, n_rows, n_cols);
 }
