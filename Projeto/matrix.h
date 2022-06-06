@@ -16,4 +16,6 @@ void print_matrix(Matrix matrix);
 
 Matrix zeros_matrix(int n_rows, int n_cols);
 
+Matrix full_matrix(int n_rows, int n_cols, int value);
+
 #endif
