@@ -15,8 +15,6 @@ typedef struct {
 
 Matrix create_matrix(int *data, int n_rows, int n_cols);
 
-void print_matrix(Matrix matrix);
-
 Matrix zeros_matrix(int n_rows, int n_cols);
 
 Matrix full_matrix(int n_rows, int n_cols, int value);
@@ -31,5 +29,7 @@ Matrix i_matrix(int n);
 int get_element(Matrix matrix, int ri, int ci);
 
 void put_element(Matrix matrix, int ri, int ci, int elem);
+
+void print_matrix(Matrix matrix);
 
 #endif
