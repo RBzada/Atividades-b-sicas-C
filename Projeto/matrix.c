@@ -109,6 +109,7 @@ Matrix reshape(Matrix matrix, int new_n_rows, int new_n_cols){
 
 int min(Matrix matrix){
     int min = matrix.data[0];
+    
     for (int i = 0; i < (matrix.n_cols * matrix.n_rows); i++){
         if(matrix.data[i] < min){
             min = matrix.data[i]; 
