@@ -24,4 +24,6 @@ Matrix i_matrix(int n);
 
 // Funções para acessar elementos:
 
+int get_element(Matrix matrix, int ri, int ci);
+
 #endif

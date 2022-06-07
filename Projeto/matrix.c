@@ -75,3 +75,7 @@ Matrix i_matrix(int n){
 
 
 // Funções para acessar elementos:
+ 
+int get_element(Matrix matrix, int ri, int ci){    
+    return matrix.data[(ri * matrix.stride_rows)  + (ci * matrix.stride_cols)];
+}
