@@ -63,3 +63,15 @@ Matrix i_matrix(int n){
 
     return create_matrix(arr, n, n);
 }
+
+
+
+
+
+
+
+
+
+
+
+// Funções para acessar elementos:
