@@ -17,18 +17,6 @@ Matrix create_matrix(int *data, int n_rows, int n_cols){
     return matriz;
 }
 
-void print_matrix(Matrix matrix){
-    int contagem = 0;
-    
-    for (int linha = 0; linha < matrix.n_rows; linha++){
-        for (int coluna = 0; coluna < matrix.n_cols; coluna++){
-            printf("%d ", matrix.data[contagem]);
-            contagem++;
-        }
-        printf("\n");
-    }
-}
-
 Matrix zeros_matrix(int n_rows, int n_cols){
     int *arr = malloc((n_cols * n_rows) * sizeof(int));
 
@@ -78,4 +66,33 @@ Matrix i_matrix(int n){
  
 int get_element(Matrix matrix, int ri, int ci){    
     return matrix.data[(ri * matrix.stride_rows)  + (ci * matrix.stride_cols)];
+}
+
+void put_element(Matrix matrix, int ri, int ci, int elem){
+    int contagem = 0;
+    for (int linha = 0; linha < matrix.n_rows; linha++){
+        for (int coluna = 0; coluna < matrix.n_cols; coluna++){
+            if (linha == ri && coluna == ci){
+                printf("%d ", elem);
+            }
+            else{
+                printf("%d ", matrix.data[contagem]);
+                contagem++;
+            }
+            
+        }
+        printf("\n");
+    }
+}
+
+void print_matrix(Matrix matrix){
+    int contagem = 0;
+    
+    for (int linha = 0; linha < matrix.n_rows; linha++){
+        for (int coluna = 0; coluna < matrix.n_cols; coluna++){
+            printf("%d ", matrix.data[contagem]);
+            contagem++;
+        }
+        printf("\n");
+    }
 }
