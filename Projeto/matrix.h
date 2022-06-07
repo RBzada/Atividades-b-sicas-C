@@ -10,6 +10,8 @@ typedef struct {
     int offset;
 } Matrix;
 
+// Funções para criação de matrizes:
+
 Matrix create_matrix(int *data, int n_rows, int n_cols);
 
 void print_matrix(Matrix matrix);

@@ -2,6 +2,8 @@
 #include "matrix.h"
 #include <stdlib.h>
 
+// Funções para criação de matrizes:
+
 Matrix create_matrix(int *data, int n_rows, int n_cols){
     Matrix matriz;
 
