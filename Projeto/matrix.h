@@ -44,4 +44,8 @@ int min(Matrix matrix);
 
 int max(Matrix matrix);
 
+int argmin(Matrix matrix);
+
+int argmax(Matrix matrix);
+
 #endif

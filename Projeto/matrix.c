@@ -126,3 +126,38 @@ int max(Matrix matrix){
    }
    return max;
 }
+
+int argmin(Matrix matrix){
+    int min = matrix.data[0];
+    int indice = 0;
+    for (int i = 0; i < (matrix.n_cols * matrix.n_rows); i++){
+        if(matrix.data[i] < min){
+            min = matrix.data[i];   
+        }
+    }
+
+   for (int i = 0; i < (matrix.n_cols * matrix.n_rows); i++){
+        if(matrix.data[i] == min){
+            return indice;   
+        }
+        indice++;
+   }
+}
+
+int argmax(Matrix matrix){
+    int max = matrix.data[0];
+    int indice = 0;
+    for (int i = 0; i < (matrix.n_cols * matrix.n_rows); i++){
+        if(matrix.data[i] > max){
+            max = matrix.data[i];   
+        }
+   }
+
+   for (int i = 0; i < (matrix.n_cols * matrix.n_rows); i++){
+        if(matrix.data[i] == max){
+            return indice;   
+        }
+        indice++;
+   }
+}
+
