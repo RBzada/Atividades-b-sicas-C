@@ -165,3 +165,26 @@ int argmax(Matrix matrix){
    }
 }
 
+
+// Funções de operação aritméticas:
+
+Matrix add(Matrix matrix_1, Matrix matrix_2){
+    int *arr = malloc((matrix_1.n_cols * matrix_1.n_rows) * sizeof(int));
+    
+    for (int i = 0; i < (matrix_1.n_cols * matrix_1.n_rows); i++){
+        arr[i] = matrix_1.data[i] + matrix_2.data[i];
+    }
+
+    return create_matrix(arr, matrix_1.n_rows, matrix_1.n_cols);
+}
+
+Matrix sub(Matrix matrix_1, Matrix matrix_2){
+    int *arr = malloc((matrix_1.n_cols * matrix_1.n_rows) * sizeof(int));
+
+    for (int i = 0; i < (matrix_1.n_cols * matrix_1.n_rows); i++){
+        arr[i] = matrix_1.data[i] - matrix_2.data[i];
+    }
+
+    return create_matrix(arr, matrix_1.n_rows, matrix_1.n_cols);
+}
+
