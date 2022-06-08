@@ -38,6 +38,9 @@ void print_matrix(Matrix matrix);
 Matrix reshape(Matrix matrix, int new_n_rows, int new_n_cols);
 
 
+
+
+
 // Funções de agregação:
 
 int min(Matrix matrix);
@@ -54,6 +57,10 @@ int argmax(Matrix matrix);
 Matrix add(Matrix Matrix_1, Matrix matrix_2);
 
 Matrix sub(Matrix Matrix_1, Matrix matrix_2);
+
+Matrix mul(Matrix matrix_1, Matrix matrix_2);
+
+Matrix division(Matrix matrix_1, Matrix matrix_2);
 
 
 #endif
