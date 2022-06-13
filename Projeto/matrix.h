@@ -1,3 +1,6 @@
+// Rafael Barboza de Almeida
+// Matrícula 20210026760
+
 #ifndef MATRIX_H
 #define MATRIX_H
 
@@ -37,8 +40,6 @@ void print_matrix(Matrix matrix);
 // Funções para manipulação de dimensões:
 
 Matrix reshape(Matrix matrix, int new_n_rows, int new_n_cols);
-
-
 
 
 
