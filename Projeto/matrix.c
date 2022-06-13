@@ -98,6 +98,7 @@ void print_matrix(Matrix matrix){
 }
 
 
+
 // Funções para manipulação de dimensões:
 
 Matrix reshape(Matrix matrix, int new_n_rows, int new_n_cols){

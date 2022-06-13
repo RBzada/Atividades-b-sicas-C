@@ -33,6 +33,7 @@ void put_element(Matrix matrix, int ri, int ci, int elem);
 void print_matrix(Matrix matrix);
 
 
+
 // Funções para manipulação de dimensões:
 
 Matrix reshape(Matrix matrix, int new_n_rows, int new_n_cols);
@@ -50,6 +51,7 @@ int max(Matrix matrix);
 int argmin(Matrix matrix);
 
 int argmax(Matrix matrix);
+
 
 
 // Funções de operações aritméticas:
