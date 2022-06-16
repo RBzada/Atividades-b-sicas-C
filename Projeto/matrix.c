@@ -94,10 +94,11 @@ void put_element(Matrix matrix, int ri, int ci, int elem){
             }
             else{
                 printf("%d ", matrix.data[contagem]);
-                contagem++;
             }
-            
+
+            contagem++;  
         }
+        
         printf("\n");
     }
 }
