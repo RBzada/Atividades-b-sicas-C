@@ -34,23 +34,23 @@ int main(){
 
 
     // Criar Matriz de zeros:
-    //printf("\n Matriz de zeros: \n");
-    //print_matrix(zeros_matrix(6, 3));
+    printf("\n Matriz de zeros: \n");
+    print_matrix(zeros_matrix(6, 3));
 
 
     // Criar Matriz de valor n:
-    //printf("\n Matriz de n: \n");
-    //print_matrix(full_matrix(6, 3, 7));
+    printf("\n Matriz de n: \n");
+    print_matrix(full_matrix(6, 3, 7));
 
 
     // Criar Matriz identidade:
-    //printf("\n Matriz identidade: \n");
-    //print_matrix(i_matrix(7));
+    printf("\n Matriz identidade: \n");
+    print_matrix(i_matrix(7));
 
 
     //Criar Matriz Tile:
-    //printf("\n Matriz repetida x vezes: \n");
-    //print_matrix(tile_matrix(matriz_1, 2));
+    printf("\n Matriz repetida x vezes: \n");
+    print_matrix(tile_matrix(matriz_1, 2));
 
 
 
@@ -60,13 +60,16 @@ int main(){
 
     // Pegar elemento:
 
-    //printf("\n O elemento escolhido foi: ");
-    //printf("%d", get_element(matriz, 2, 2));
+    printf("\n O elemento escolhido foi: ");
+    printf("%d \n", get_element(matriz, 2, 2));
     
 
     // Colocar elemento:
-   // printf("\n\n Com a mudanca de elemento a matriz fica: \n");
-   // put_element(matriz, 2, 1, 11);
+
+    printf("\n Matriz original: \n");
+    print_matrix(matriz);
+    printf("\n Com a mudanca de elemento a matriz fica: \n");
+    put_element(matriz, 2, 1, 11);
 
 
 
@@ -86,8 +89,8 @@ int main(){
 
 
     // Redimensionar matriz:
-   // printf("\n A matrix redimensionada fica: \n");
-   // print_matrix(reshape(matriz_2, 3, 3));
+    printf("\n A matrix redimensionada fica: \n");
+    print_matrix(reshape(matriz_2, 3, 3));
 
 
     // Slice de uma matriz:
@@ -96,8 +99,8 @@ int main(){
 
 
     // Matriz transposta:
-    //printf("\n Matriz transposta: \n");
-    //print_matrix(transpose(matriz_1));
+    printf("\n Matriz transposta: \n");
+    print_matrix(transpose(matriz_1));
 
 
 
