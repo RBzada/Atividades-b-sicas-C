@@ -26,6 +26,8 @@ int main(){
 
 
 
+
+
     // FUNÇÕES PARA CRIAR MATRIZES: 
 
     // Criar Matriz:
@@ -59,18 +61,15 @@ int main(){
     // FUNÇÕES PARA ACESSAR ELEMENTO:
 
     // Pegar elemento:
-
     printf("\n O elemento escolhido foi: ");
     printf("%d \n", get_element(matriz, 2, 2));
     
 
     // Colocar elemento:
-
     printf("\n Matriz original: \n");
     print_matrix(matriz);
     printf("\n Com a mudanca de elemento a matriz fica: \n");
     put_element(matriz, 2, 1, 11);
-
 
 
 
@@ -93,11 +92,6 @@ int main(){
     print_matrix(reshape(matriz_2, 3, 3));
 
 
-    // Slice de uma matriz:
-    //printf("\n Matriz com slice: \n");
-    //print_matrix(slice(matriz_2, 0, 2, 1, 3));
-
-
     // Matriz transposta:
     printf("\n Matriz transposta: \n");
     print_matrix(transpose(matriz_1));
@@ -106,12 +100,11 @@ int main(){
 
 
 
-
     // FUNÇÕES DE AGREGAÇÃO:
 
     // Pegar o menor e maior elemento da matriz:
-    //printf("\n O menor elemento é %d, no o índice %d", min(matriz), argmin(matriz));
-   // printf("\n O maior elemento é %d, no índice %d", max(matriz), argmax(matriz));
+    printf("\n O menor elemento é %d, no o índice %d", min(matriz), argmin(matriz));
+    printf("\n O maior elemento é %d, no índice %d", max(matriz), argmax(matriz));
 
 
 
@@ -120,23 +113,23 @@ int main(){
     // FUNÇÕES DE OPERAÇÕES ARITMÉTICAS:
 
     //Adição dos elementos das matrizes:
-   // printf("\n\n Soma dos elementos das matrizes: \n");
-   // print_matrix(add(matriz, matriz_1));
+    printf("\n\n Soma dos elementos das matrizes: \n");
+    print_matrix(add(matriz, matriz_1));
 
 
     // Subtração dos elementos das matrizes:
-   // printf("\n\n Subtração dos elementos das matrizes: \n");
-    //print_matrix(sub(matriz, matriz_1));
+    printf("\n\n Subtração dos elementos das matrizes: \n");
+    print_matrix(sub(matriz, matriz_1));
 
 
     // Multiplicação dos elemenos das matrizes:
-    //printf("\n\n Multiplicação dos elementos das matrizes: \n");
-   // print_matrix(mul(matriz, matriz_1));
+    printf("\n\n Multiplicação dos elementos das matrizes: \n");
+    print_matrix(mul(matriz, matriz_1));
 
 
     // Divisão dos elemenos das matrizes:
-    //printf("\n\n Divisão dos elementos das matrizes: \n");
-   // print_matrix(division(matriz, matriz_1));
+    printf("\n\n Divisão dos elementos das matrizes: \n");
+    print_matrix(division(matriz, matriz_1));
 
     return 0;
 }

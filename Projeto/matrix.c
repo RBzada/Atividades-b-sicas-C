@@ -98,7 +98,7 @@ void put_element(Matrix matrix, int ri, int ci, int elem){
 
             contagem++;  
         }
-        
+
         printf("\n");
     }
 }
@@ -142,6 +142,7 @@ Matrix transpose(Matrix matrix){
 
     return create_matrix(arr, matrix.n_cols, matrix.n_rows);
 }
+
 
 
 // Funções de agregação:
@@ -203,6 +204,7 @@ int argmax(Matrix matrix){
         indice++;
    }
 }
+
 
 
 // Funções de operação aritméticas:
