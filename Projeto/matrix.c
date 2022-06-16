@@ -58,13 +58,6 @@ Matrix i_matrix(int n){
 
 
 
-
-
-
-
-
-
-
 // Funções para acessar elementos:
  
 int get_element(Matrix matrix, int ri, int ci){    
@@ -107,6 +100,51 @@ void print_matrix(Matrix matrix){
 Matrix reshape(Matrix matrix, int new_n_rows, int new_n_cols){
     return create_matrix(matrix.data, new_n_rows, new_n_cols);
 }
+
+Matrix transpose(Matrix matrix){
+    int *arr = malloc(sizeof(int) * (matrix.n_cols * matrix.n_rows));
+    int next = 0;
+    int aux = 0;
+
+    for(int i = 0; i < matrix.n_cols * matrix.n_rows; i++){
+        arr[aux] = matrix.data[i]; 
+
+        if(aux >= ((matrix.n_cols * matrix.n_rows) - matrix.n_rows)){
+            next++;  
+            aux = next;
+        }
+        else{
+            aux += matrix.n_rows;
+        }
+    }
+
+    return create_matrix(arr, matrix.n_cols, matrix.n_rows);
+}
+
+Matrix slice(Matrix a_matrix, int rs, int re, int cs, int ce){
+    int size = a_matrix.n_rows * a_matrix.n_cols;
+    int slice[a_matrix.n_rows][a_matrix.n_cols];
+    int *prov = malloc(size * sizeof(int));
+
+    int x=0;
+    int k = 0;
+    int i,j;
+    for (i=0; i<a_matrix.n_rows;i++) {
+        if(k==a_matrix.n_rows * a_matrix.n_cols)
+        break;
+        for (j=0;j<a_matrix.n_cols;j++) {
+            slice[i][j]=a_matrix.data[k];
+            if (i >= rs && i < re && j >= cs && j < ce){
+                x++;
+                prov[k] = a_matrix.data[k];
+            }
+            k++;
+            }
+    }
+    return create_matrix(prov, a_matrix.n_rows, a_matrix.n_cols);
+}
+
+
 
 
 // Funções de agregação:
