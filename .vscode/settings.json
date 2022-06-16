@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "limpeza.h": "c",
-        "stdio.h": "c",
-        "histograma.h": "c",
-        "stdlib.h": "c",
-        "matrix.h": "c"
-    }
-}
