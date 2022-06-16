@@ -24,6 +24,7 @@ Matrix full_matrix(int n_rows, int n_cols, int value);
 
 Matrix i_matrix(int n);
 
+Matrix tile_matrix(Matrix matrix, int reps);
 
 
 
@@ -42,9 +43,6 @@ void print_matrix(Matrix matrix);
 Matrix reshape(Matrix matrix, int new_n_rows, int new_n_cols);
 
 Matrix transpose(Matrix matrix);
-
-Matrix slice(Matrix a_matrix, int rs, int re, int cs, int ce);
-
 
 
 
